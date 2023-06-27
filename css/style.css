@@ -1,0 +1,92 @@
+/************
+RESET
+************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/************
+GENERICS
+************/
+body{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container > h1 {
+    margin-top: 1.5rem;
+}
+
+.container > p {
+    margin-bottom: 1rem;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+button#restart_button {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background-color: transparent;
+    border: 5px solid limegreen;
+    color: limegreen;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button#restart_button:hover {
+    background-color: limegreen;
+    color: #111;
+}
+
+/************
+LAYOVER
+************/
+#layover {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-color: rgba(50, 50, 50, .9);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#layover #game_result {
+    background-color: #eee;
+    padding: 3rem;
+
+    position: relative;
+}
+
+#layover #total_score {
+    font-style: italic;
+}
+
+#layover .btn-close {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+
+    border: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    border-radius: 50%;
+    background-color: red;
+    font-weight: 600;
+    cursor: pointer;
+}
