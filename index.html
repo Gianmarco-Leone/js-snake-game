@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake</title>
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- JS -->
+    <script type="text/javascript" src="./js/main.js" defer></script>
+</head>
+
+<body>
+
+    <!-- INIZIO LAVAGNA GIOCO -->
+    <div class="container">
+        <h1>Snake</h1>
+        <!-- Lo span lo riempio con javascript -->
+        <p>
+            Punteggio: <span id="score"></span>
+        </p>
+        <canvas id="board"></canvas>
+    </div>
+    <!-- FINE LAVAGNA GIOCO -->
+
+    <!-- RESTART -->
+    <button id="restart_button">Restart</button>
+
+    <!-- INIZIO LAYOVER -->
+    <div id="layover" class="hidden">
+        <div id="game_result">
+            <h1>Game Over!</h1>
+            <p id="total_score"></p>
+
+            <button class="btn-close">X</button>
+        </div>
+    </div>
+    <!-- FINE LAYOVER -->
+
+</body>
+
+</html>
